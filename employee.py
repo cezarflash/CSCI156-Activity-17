@@ -4,20 +4,21 @@ from ss import *
 class Employee:
     def __init__(self,last=None,first=None,start=None,pay_rate=None,social=None):
         if last == None:
-            self.last = "unknown"
+            self.last = input("Employee Last Name: ")
         else:
             self.last=last
 
+
         if first==None:
-            self.first = "unknown"
+            self.first =input("Employee First Name: ")
         else:
             self.first=first
         if start == None:
-            self.start="unknown"
+            self.start=input("Employee Start Date: ")
         else:
             self.start=start
         if pay_rate == None:
-            self.pay_rate="unknown"
+            self.pay_rate=input("Employee Pay_rate: ")
         else:
             self.pay_rate=pay_rate
 
