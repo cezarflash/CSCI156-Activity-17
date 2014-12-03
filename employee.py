@@ -7,8 +7,6 @@ class Employee:
             self.last = input("Employee Last Name: ")
         else:
             self.last=last
-
-
         if first==None:
             self.first =input("Employee First Name: ")
         else:
@@ -21,15 +19,10 @@ class Employee:
             self.pay_rate=input("Employee Pay_rate: ")
         else:
             self.pay_rate=pay_rate
-
-        ss_object = SS()
         if social == None:
-            ss_object.getsocial()
+            self.social = SS()
         else:
-            ss_object.number=social
-            ss_object.validatess()
-
-        self.social=ss_object.number
+            self.social = social
 
     def __str__(self):
         return "First Name:"+' '+self.first+"\nLast Name:"+' '+self.last+' '+"\nYear started:"+' '+\
